@@ -1,0 +1,37 @@
+name: VirtNiche
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.16
+  - pip=25.2
+  - ipykernel=6.29.5
+  - pip:
+      - --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+      - --extra-index-url https://download.pytorch.org/whl/cu117
+      - torch==2.0.1+cu117
+      - numpy==1.26.0
+      - pandas==2.2.1
+      - scipy==1.12.0
+      - scikit-learn==1.2.2
+      - h5py==3.8.0
+      - anndata==0.9.1
+      - scanpy==1.9.3
+      - matplotlib==3.7.1
+      - seaborn==0.11.2
+      - numba==0.58.1
+      - llvmlite==0.41.1
+      - jax==0.4.18
+      - jaxlib==0.4.18
+      - chex==0.1.7
+      - flax==0.7.4
+      - optax==0.1.7
+      - numpyro==0.13.2
+      - orbax-checkpoint==0.4.1
+      - tensorstore==0.1.46
+      - pytorch-lightning==1.9.5
+      - torchmetrics==1.2.0
+      - scvi-tools==0.20.3
+      - rich==13.6.0
+      - tqdm==4.66.4
+      - jupyterlab==4.1.8
